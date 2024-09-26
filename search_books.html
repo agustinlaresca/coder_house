@@ -1,0 +1,16 @@
+{% extends 'myapp/base.html' %}
+{% block title %}Search Books{% endblock %}
+{% block content %}
+    <h2>Search for books</h2>
+    <form method="get">
+        <input type="text" name="q" placeholder="Enter book title">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for book in books %}
+            <li>{{ book.title }} by {{ book.author.name }}</li>
+        {% empty %}
+            <li>No books found</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
