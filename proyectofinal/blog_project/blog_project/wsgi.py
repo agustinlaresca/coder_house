@@ -1,0 +1,1 @@
+# Placeholder for blog_project/wsgi.py

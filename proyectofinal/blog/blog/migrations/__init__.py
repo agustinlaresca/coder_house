@@ -1,0 +1,1 @@
+# Placeholder for blog/migrations/__init__.py
