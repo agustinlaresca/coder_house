@@ -1,1 +1,10 @@
-# Placeholder for accounts/templates/accounts/signup.html
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Registrarse</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Registrarse</button>
+    </form>
+{% endblock %}
